@@ -1,7 +1,9 @@
-
 import 'package:flutter/material.dart';
 
-import 'ui/tween_animation_scree.dart';
+import 'ui/bank_screen.dart';
+import 'ui/main_bounce_tab_bar.dart';
+import 'ui/tween_animation_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -36,20 +38,19 @@ class MyHomeScreen extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  push(context,
-                       TweenAnimationScreen(title: title1));
+                  push(context, TweenAnimationScreen(title: title1));
                 },
                 child: const Text('Tween Animation Builder')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const CanvasRenderObjectSample());
-            //     },
-            //     child: const Text('Canvas RenderObject Sample')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const CanvasCustomPaintSample());
-            //     },
-            //     child: const Text('Canvas CustomPaint')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const MainBounceTabBar());
+                },
+                child: const Text('Main Bounce Tab Bar')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const BankScreen());
+                },
+                child: const Text('Bank App')),
             // ElevatedButton(
             //     onPressed: () {
             //       push(context, const CanvasPerformanceSample());
