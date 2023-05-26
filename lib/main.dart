@@ -1,3 +1,4 @@
+import 'package:animation_examples/ui/data_backup/data_backup_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/bank_screen.dart';
@@ -51,11 +52,11 @@ class MyHomeScreen extends StatelessWidget {
                   push(context, const BankScreen());
                 },
                 child: const Text('Bank App')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const CanvasPerformanceSample());
-            //     },
-            //     child: const Text('Canvas Performance')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const DataBackupScreen());
+                },
+                child: const Text('Data Backup')),
             // ElevatedButton(
             //     onPressed: () {
             //       push(context, const TalkInteractivePage());
