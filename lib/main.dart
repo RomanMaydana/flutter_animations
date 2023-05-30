@@ -2,6 +2,7 @@ import 'package:animation_examples/ui/data_backup/data_backup_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/bank_screen.dart';
+import 'ui/flight_app/flight_app_screen.dart';
 import 'ui/main_bounce_tab_bar.dart';
 import 'ui/tween_animation_screen.dart';
 
@@ -57,11 +58,11 @@ class MyHomeScreen extends StatelessWidget {
                   push(context, const DataBackupScreen());
                 },
                 child: const Text('Data Backup')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const TalkInteractivePage());
-            //     },
-            //     child: const Text('Talk Interactive Page')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const FlightHomeApp());
+                },
+                child: const Text('Flight App')),
             // ElevatedButton(
             //     onPressed: () {
             //       push(context, const AnimatedDonutChart());
