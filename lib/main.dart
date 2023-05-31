@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'ui/bank_screen.dart';
 import 'ui/flight_app/flight_app_screen.dart';
 import 'ui/main_bounce_tab_bar.dart';
+import 'ui/multiple_card_flow/multiple_card_flow_screen.dart';
 import 'ui/tween_animation_screen.dart';
 
 void main() {
@@ -63,11 +64,11 @@ class MyHomeScreen extends StatelessWidget {
                   push(context, const FlightHomeApp());
                 },
                 child: const Text('Flight App')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const AnimatedDonutChart());
-            //     },
-            //     child: const Text('Animated Donut Chart')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const MultipleCardFlow());
+                },
+                child: const Text('Multiple Card Flow')),
             // ElevatedButton(
             //     onPressed: () {
             //       push(context, const ParticlesAnimationScreen());
