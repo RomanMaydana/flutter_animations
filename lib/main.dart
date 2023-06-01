@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'ui/bank_screen.dart';
 import 'ui/flight_app/flight_app_screen.dart';
 import 'ui/main_bounce_tab_bar.dart';
+import 'ui/movie_app/src/movies/movie_app.dart';
 import 'ui/multiple_card_flow/multiple_card_flow_screen.dart';
 import 'ui/tween_animation_screen.dart';
 
@@ -69,11 +70,11 @@ class MyHomeScreen extends StatelessWidget {
                   push(context, const MultipleCardFlow());
                 },
                 child: const Text('Multiple Card Flow')),
-            // ElevatedButton(
-            //     onPressed: () {
-            //       push(context, const ParticlesAnimationScreen());
-            //     },
-            //     child: const Text('Particles animation'))
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const MovieApp());
+                },
+                child: const Text('Movie App'))
           ],
         ));
   }
