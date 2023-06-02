@@ -6,6 +6,7 @@ import 'ui/flight_app/flight_app_screen.dart';
 import 'ui/main_bounce_tab_bar.dart';
 import 'ui/movie_app/src/movies/movie_app.dart';
 import 'ui/multiple_card_flow/multiple_card_flow_screen.dart';
+import 'ui/radial_progress/radial_progress_widget.dart';
 import 'ui/tween_animation_screen.dart';
 
 void main() {
@@ -74,7 +75,12 @@ class MyHomeScreen extends StatelessWidget {
                 onPressed: () {
                   push(context, const MovieApp());
                 },
-                child: const Text('Movie App'))
+                child: const Text('Movie App')),
+                 ElevatedButton(
+                onPressed: () {
+                  push(context, const RadialProgressWidget());
+                },
+                child: const Text('Radial Progress'))
           ],
         ));
   }
